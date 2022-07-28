@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="al.css">
+</head>
+<body>
+  <div class="topnav">
+    <a href="home.html">Home</a>
+    <a href="#about">Update Profile</a>
+    <a class="active" href="#apply">Apply Leave</a>
+    <a href="#leave">Leaves</a>
+    <a style="float:right" href="#Profile">Profile</a>
+  </div>
+  <hr>
+<div class="container">
+  <form action="/action_page.php">
+    <div>
+        <label for="fname">Name</label> &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="text" id="fname" name="firstname" placeholder="First name.." required>
+        <span class="input-group-btn" 
+            style="width:0px;"></span>
+        <input type="text" id="lname" name="lastname" placeholder="Last name.." required>
+    </div>
+    
+    <label for="empid">Employee ID</label> &nbsp; &nbsp; &nbsp; &nbsp;
+    <input type="text" id="empid" name="empid" placeholder="Your Employee ID Number" required>
+    <br>
+
+    <label for="email">Email</label> &nbsp; &nbsp; &nbsp; &nbsp;
+    <input type="text" id="email" name="email" placeholder="Your Personal Email ID" required>
+    <br>
+
+    <label for="memail">Manager Email</label> &nbsp; &nbsp; &nbsp; &nbsp;
+    <input type="text" id="memail" name="memail" placeholder="Manager Email ID" required>
+    <br>
+
+    <h4>Details of Leave</h4>
+    <br>
+    <label for="ls">Start Date</label> &nbsp; &nbsp; &nbsp; &nbsp;
+    <input style="height: 40px;width:150px;font-size:large" type="date" id="ls" name="ls" required>
+    <br><br><br>
+
+    <label for="ls">End Date</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <input style="height: 40px;width:150px;font-size:large" type="date" id="ls" name="ls" required>
+    <br><br>
+
+    <label for="reason">Leave Type</label>&nbsp; &nbsp; &nbsp; &nbsp;
+    <select id="reason" name="reason">
+      <option value="australia">Casual leave</option>
+      <option value="europe">Sick leave</option>
+      <option value="canada">Vacation</option>
+      <option value="usa">other</option>
+    </select><br>
+
+    <textarea id="subject" name="subject" placeholder="Any other Comments.." style="width:500px;height:100px"></textarea><br><br>
+
+    <button class="button button4">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
